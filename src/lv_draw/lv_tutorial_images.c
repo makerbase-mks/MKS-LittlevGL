@@ -124,6 +124,42 @@ const lv_img_dsc_t bmp_pic_45x45 = {
   .data = &bmp_public_buf[0],
 };
 
+const lv_img_dsc_t bmp_para_back = {
+  .header.always_zero = 0,
+  .header.w = 70,
+  .header.h = 40,
+  .data_size = 70*40 * LV_COLOR_SIZE / 8,
+  .header.cf = LV_IMG_CF_TRUE_COLOR,
+  .data = &bmp_public_buf[0],
+};
+
+const lv_img_dsc_t bmp_para_arrow = {
+  .header.always_zero = 0,
+  .header.w = 10,
+  .header.h = 17,
+  .data_size = 10*17 * LV_COLOR_SIZE / 8,
+  .header.cf = LV_IMG_CF_TRUE_COLOR,
+  .data = &bmp_public_buf[0],
+};
+
+const lv_img_dsc_t bmp_para_bank = {
+  .header.always_zero = 0,
+  .header.w = 70,
+  .header.h = 28,
+  .data_size = 70*28 * LV_COLOR_SIZE / 8,
+  .header.cf = LV_IMG_CF_TRUE_COLOR,
+  .data = &bmp_public_buf[0],
+};
+
+const lv_img_dsc_t bmp_para_state = {
+  .header.always_zero = 0,
+  .header.w = 90,
+  .header.h = 30,
+  .data_size = 90*30 * LV_COLOR_SIZE / 8,
+  .header.cf = LV_IMG_CF_TRUE_COLOR,
+  .data = &bmp_public_buf[0],
+};
+
 /*********************
  *      DEFINES
  *********************/
